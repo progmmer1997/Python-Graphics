@@ -1,0 +1,13 @@
+from graphics import *
+win = GraphWin("Окно для графики", 500, 500)
+obj = Polygon(Point(100, 100), Point(200, 50), Point(300, 100))
+obj.setWidth(5)
+obj.setFill("red")
+obj.draw(win)
+obj = Rectangle(Point(100, 100), Point(300, 300))
+obj.setFill("yellow")
+obj.draw(win)
+obj = Circle(Point(200, 190), 30)
+obj.setFill("blue")
+obj.draw(win)
+win.getMouse()
